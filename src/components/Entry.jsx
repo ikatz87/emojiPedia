@@ -1,7 +1,17 @@
 import React from "react";
 
-function Entry() {
-  return <h1></h1>;
+function Entry(props) {
+  return (
+    <div className="term">
+      <dt>
+        <span className="emoji" role="img" aria-label="Tense Biceps">
+          {props.emoji}
+        </span>
+        <span>{props.detail}</span>
+      </dt>
+      <dd>{props.description}</dd>
+    </div>
+  );
 }
 
 export default Entry;
